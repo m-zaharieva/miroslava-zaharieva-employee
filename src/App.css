@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  text-align: center;
+  border-bottom: 1px solid #4b5257;
+}
+
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+section.fileUpload {
+  width: 35%;
+  padding: 40px;
+  background-color: #dddddd;
+  height: 100vh;
+  border-right: 2px solid #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.fileUpload h1 {
+  color: #0065ad;
+  font-size: 25px;
+  font-weight: normal;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0065ad;
+}
+
+section.fileUpload p {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+section.fileUpload p.required-file-format {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: rgb(180, 87, 0);
+}
+
+section.fileUpload .required-file-format span {
+  font-weight: bold;
+}
+
+section.table-section {
+  width: 65%;
+  padding: 45px 40px;
+}
+
+section.table-section h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+section.table-section table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+
+section.table-section table th {
+  background-color: #cccccc;
+  padding: 10px;
+  font-weight: normal;
+}
+
+section.table-section table tbody tr:nth-child(2n+1) {
+  background-color: #ffffff;  
+}
+
+section.table-section table td {
+  padding: 10px;
+  border: 1px solid #cccccc;
 }
